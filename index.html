@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Mohit's Portfolio</title>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Typed.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Mohit's</span> Portfolio
+            </div>
+            <div class="nav-links">
+                <a href="#home" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Home</a>
+                <a href="#about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">About</a>
+                <a href="#timeline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Journey</a>
+                <a href="#skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Skills</a>
+                <a href="#projects" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Projects</a>
+                <a href="#services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Services</a>
+                <div class="contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleDropdown()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home" onclick="toggleDropdown()">Home</a>
+                <a href="#about" onclick="toggleDropdown()">About</a>
+                <a href="#timeline" onclick="toggleDropdown()">Journey</a>
+                <a href="#skills" onclick="toggleDropdown()">Skills</a>
+                <a href="#projects" onclick="toggleDropdown()">Projects</a>
+                <a href="#services" onclick="toggleDropdown()">Services</a>
+                <a href="#contact" onclick="toggleDropdown()">Contact Us</a>
+            </div>
+            <i class="fa-solid fa-xmark cancel" onclick="toggleDropdown()"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">Hey I'm <span>Mohit Kumar
+                    Agarwal</span></h1>
+            <div class="typewriter" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">I'm a <span
+                    id="typed-text"></span></div>
+            <p data-aos="flip-up" data-aos-duration="500" data-aos-delay="500">Welcome to my portfolio! I am a
+                passionate Web Developer & Designer dedicated to crafting visually stunning, user-friendly, and
+                high-performance websites. With a strong foundation in front-end technologies, I specialize in bringing
+                creative ideas to life through clean code and intuitive design.</p>
+            <div class="social-links" data-aos="flip-down" data-aos-duration="500" data-aos-delay="500">
+                <a href="https://github.com/Moh1030" target="_blank" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:agarwalmohit3010@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/mohit-kumar-agarwal-4593a328b/" target="_blank"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/mohh_" target="_blank" aria-label="X (Twitter)"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="download-btn" data-aos="zoom-out-up" data-aos-duration="500" data-aos-delay="500">
+                <a href="Mohit_CV.pdf" download="Mohit_CV.pdf">
+                    <button>Download CV</button>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+            <img src="img/main.png" alt="Mohit Kumar Agarwal">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 data-aos="fade-up" data-aos-duration="500">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-image-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <img src="img/main.png" alt="Mohit Kumar Agarwal">
+            </div>
+            <div class="about-text" data-aos="fade-left" data-aos-duration="500" data-aos-delay="400">
+                <p>Hello! I'm <strong>Mohit Kumar Agarwal</strong>, a passionate and detail-oriented Web Developer and
+                    Designer. My journey in the digital world began with a fascination for how beautiful and functional
+                    websites are built, and it has since evolved into a commitment to creating engaging and intuitive
+                    online experiences.</p>
+                <p>With a strong foundation in modern front-end technologies like <strong>HTML, CSS, and
+                        JavaScript</strong>, I love turning complex problems into elegant solutions. I'm always eager to
+                    learn new tools and techniques to keep my skills sharp and deliver cutting-edge results.</p>
+                <p>Beyond coding, I have a keen eye for design, ensuring that every project I work on is not just
+                    functional but also visually stunning. I believe that the best websites seamlessly blend aesthetics
+                    with usability. When I'm not immersed in code, you might find me exploring new design trends or
+                    contributing to open-source projects.</p>
+                <p>Let's build something amazing together!</p>
+            </div>
+        </div>
+        <div class="about-highlights" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+            <div class="highlight-item" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+                <i class="fa-solid fa-code"></i>
+                <h3>Clean Code</h3>
+                <p>Writing efficient, maintainable, and well-documented code is at the core of my development
+                    philosophy.</p>
+            </div>
+            <div class="highlight-item" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Intuitive Design</h3>
+                <p>Crafting user interfaces that are not only beautiful but also incredibly easy and enjoyable to use.
+                </p>
+            </div>
+            <div class="highlight-item" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Performance Focus</h3>
+                <p>Optimizing web experiences to ensure fast loading times and smooth interactions for all users.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2 data-aos="fade-up" data-aos-duration="500">My <span>Journey</span></h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <h3>2023</h3>
+                <p>Started B.Tech (Kolkata)</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <h3>2024</h3>
+                <p>Learned HTML, CSS, and JavaScript basics</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <h3>2025</h3>
+                <p>Started working with React, GitHub, and Firebase</p>
+                <p>Open to internships/freelance projects</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <h3>2026(Goal)</h3>
+                <p>Focused on becoming a Full-Stack Developer </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 data-aos="fade-up" data-aos-duration="1000">My <span>Skills</span></h2>
+
+        <!-- Tabs -->
+        <div class="tab-buttons" data-aos="fade-up" data-aos-delay="200">
+            <button class="tab-btn active" onclick="showTab(event, 'tech')">Technical Skills</button>
+            <button class="tab-btn" onclick="showTab(event, 'tools')">Tools & Technologies</button>
+            <button class="tab-btn" onclick="showTab(event, 'soft')">Soft Skills</button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div id="tech" class="tab-content active">
+            <div class="skills-container">
+                <div class="skill" data-aos="fade-right" data-aos-delay="100">
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%" data-aos="skill-bar-animation"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%" data-aos="skill-bar-animation"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="300">
+                    <h3>JavaScript (ES6+)</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%" data-aos="skill-bar-animation"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="400">
+                    <h3>React.js(Learning)</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 20%" data-aos="skill-bar-animation"></div>
+                    </div>
+                </div>
+                
+                
+                <div class="skill" data-aos="fade-right" data-aos-delay="700">
+                    <h3>MongoDB (Learning)</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 30%" data-aos="skill-bar-animation"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="800">
+                    <h3>RESTful APIs</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%" data-aos="skill-bar-animation"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tools" class="tab-content">
+            <div class="skills-grid">
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="100"><i
+                        class="fab fa-github"></i><span>GitHub</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="200"><i
+                        class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="300"><i
+                        class="fas fa-fire"></i><span>Firebase</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="400"><i
+                        class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-code"></i><span>VS
+                        Code</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="600"><i
+                        class="fas fa-terminal"></i><span>CLI</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="700"><i
+                        class="fab fa-npm"></i><span>npm</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="800"><i
+                        class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="900"><i
+                        class="fab fa-sass"></i><span>Sass</span></div>
+                <div class="skill-icon" data-aos="zoom-in" data-aos-delay="1000"><i
+                        class="fas fa-feather-pointed"></i><span>Tailwind CSS</span></div>
+            </div>
+        </div>
+
+        <div id="soft" class="tab-content">
+            <div class="soft-skills-grid">
+                <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-comments"></i>
+                    <h4>Communication</h4>
+                </div>
+                <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-users-cog"></i>
+                    <h4>Teamwork</h4>
+                </div>
+                <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-lightbulb"></i>
+                    <h4>Problem-Solving</h4>
+                </div>
+                <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-brain"></i>
+                    <h4>Adaptability</h4>
+                </div>
+                <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-clock"></i>
+                    <h4>Time Management</h4>
+                </div>
+                <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-handshake"></i>
+                    <h4>Collaboration</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 data-aos="fade-up" data-aos-duration="1000">My <span>Projects</span></h2>
+        <div class="projects-grid">
+           
+
+            <!-- Project Card 2: GitaVerse -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <!-- Optional: Add an img tag here if you have a thumbnail -->
+                <!-- <img src="path/to/gitaverse-thumbnail.jpg" alt="GitaVerse Thumbnail"> -->
+                <div class="project-content">
+                    <h3>GitaVerse 📖</h3>
+                    <p>A digital platform to explore the Bhagavad Gita verse by verse with Hindi/English/Sanskrit
+                        support, audio playback, search, and daily verses.</p>
+                    <div class="project-tech">
+                        <span>Html</span>
+                        <span>CSS</span>
+                        <span>API Call</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Project Card 4: Smart Trash Bin -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <!-- Optional: Add an img tag here if you have a thumbnail -->
+                <!-- <img src="path/to/smartbin-thumbnail.jpg" alt="SmartBin Thumbnail"> -->
+                <div class="project-content">
+                    <h3>SmartBin 🗑️</h3>
+                    <p>An AI-powered smart dustbin with sensor-based waste segregation. Automatically detects dry/wet
+                        waste and opens the lid hands-free.</p>
+                    <div class="project-tech">
+                        <span>Arduino/Raspberry Pi</span>
+                        <span>Sensor Integration</span>
+                        <span>Machine Learning (Edge)</span>
+                        <span>IoT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fas fa-microchip"></i> Hardware Overview</a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5: Currency Converter -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <!-- Optional: Add an img tag here if you have a thumbnail -->
+                <!-- <img src="path/to/currency-converter-thumbnail.jpg" alt="Currency Converter Thumbnail"> -->
+                <div class="project-content">
+                    <h3>Currency Converter 💱</h3>
+                    <p>A simple and intuitive web application that converts currency values in real-time using the
+                        latest exchange rates. Built for quick, responsive, and accurate currency conversion between
+                        major international currencies.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Exchange Rate API</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="project-links">
+                        <!-- Add actual live demo link if available -->
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <!-- Add actual GitHub link if available -->
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 6: GitHub Profile Viewer -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <!-- Optional: Add an img tag here if you have a thumbnail -->
+                <!-- <img src="path/to/github-viewer-thumbnail.jpg" alt="GitHub Viewer Thumbnail"> -->
+                <div class="project-content">
+                    <h3>GitHub Viewer 🔍</h3>
+                    <p>A React app to search and display GitHub profiles with data like name, bio, followers, and
+                        repositories. Supports dark/light mode.</p>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>GitHub API</span>
+                        <span>CSS Modules</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/mohitportfolio/github-profile-viewer" target="_blank"><i
+                                class="fab fa-github"></i> View on GitHub</a>
+                        <!-- If there's a live demo, uncomment this: -->
+                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 7: This Portfolio -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+                <!-- Optional: Add an img tag here if you have a thumbnail -->
+                <!-- <img src="path/to/portfolio-thumbnail.jpg" alt="My Portfolio Thumbnail"> -->
+                <div class="project-content">
+                    <h3>My Portfolio 🌐</h3>
+                    <p>This very site! Built with HTML, CSS, JavaScript, AOS, and personalized branding. Showcases all
+                        my projects, skills, and goals.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>AOS Library</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#home" target="_blank"><i class="fas fa-eye"></i> You're Viewing It!</a>
+                        <a href="https://github.com/Moh1030/my-portfolio" target="_blank"><i class="fab fa-github"></i>
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 data-aos="fade-up" data-aos-duration="1000">My <span>Services</span></h2>
+        <div class="services-grid">
+            <!-- SERVICE CARD: Web Development -->
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Crafting responsive, high-performance, and scalable web applications from scratch using modern
+                    front-end technologies.</p>
+            </div>
+
+            <!-- SERVICE CARD: UI/UX Design -->
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive and engaging user interfaces that provide an exceptional user experience,
+                    focusing on usability and aesthetics.</p>
+            </div>
+
+            <!-- SERVICE CARD: Performance Optimization -->
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-bolt"></i>
+                <h3>Performance Opt.</h3>
+                <p>Optimize speed, load times, and responsiveness for smoother user experiences across all devices.</p>
+            </div>
+
+            <!-- SERVICE CARD: Startup Consulting -->
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Startup Consulting</h3>
+                <p>Helping you turn your app ideas into actionable MVPs and project plans, offering technical guidance
+                    and strategic insights.</p>
+            </div>
+
+            <!-- SERVICE CARD: Tech Research -->
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+                <i class="fa-solid fa-flask"></i>
+                <h3>Tech Research</h3>
+                <p>Exploring and developing experimental projects using AI, sensors, and wearables to solve real-world
+                    problems.</p>
+            </div>
+
+            <!-- SERVICE CARD: Bug Fixing & Optimization -->
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+                <i class="fas fa-bug"></i>
+                <h3>Bug Fixing & Opt.</h3>
+                <p>Identifying and resolving issues, and optimizing your website's performance for faster loading and
+                    better user engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 data-aos="fade-up" data-aos-duration="1000">What <span>Clients Say</span></h2>
+
+        <div class="main-testimonial-slider" data-aos="fade-up" data-aos-delay="200">
+            <div class="main-testimonial-item active">
+                <p>"Mohit's attention to detail is impressive. Our site loads faster and looks stunning!"</p>
+                <h4>- Riya Sharma</h4>
+            </div>
+            <div class="main-testimonial-item">
+                <p>"Highly professional and delivers clean code. Would hire again!"</p>
+                <h4>- Dev Joshi</h4>
+            </div>
+            <div class="main-testimonial-item">
+                <p>"Great UI/UX designer. Made our website super intuitive!"</p>
+                <h4>- Anjali Mehta</h4>
+            </div>
+        </div>
+
+        <!-- Dots for manual navigation -->
+        <div class="testimonial-dots">
+            <span class="dot active" onclick="selectMainTestimonial(0)"></span>
+            <span class="dot" onclick="selectMainTestimonial(1)"></span>
+            <span class="dot" onclick="selectMainTestimonial(2)"></span>
+        </div>
+    </section>
+
+
+    <!-- --- Contact Section --- -->
+    <section id="contact">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Get in <span>Touch</span></h2>
+        <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
+            <h3>Send Me a Message!</h3>
+            <p>Whether you have a project in mind, a question, or just want to say hello, feel free to reach out. I'll
+                get back to you as soon as possible.</p>
+
+            <!-- Formspree.io Integration -->
+            <form id="contact-form" action="https://formspree.io/f/mdkzygep" method="POST" data-aos="fade-up">
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Send</button>
+                <p id="status-msg"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- --- Footer --- -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Moh1030" target="_blank" aria-label="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="mailto:agarwalmohit3010@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/mohit-kumar-agarwal-4593a328b/" target="_blank"
+                aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/mohh_" target="_blank" aria-label="X (Twitter)"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Mohit Kumar Agarwal. All rights reserved. Made with ❤️ and <span>Neon</span>.</p>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>
