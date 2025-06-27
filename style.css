@@ -1283,7 +1283,7 @@ section h2 span {
     max-width: 700px;
     margin: auto;
     position: relative;
-    padding: 30px;
+    padding: 200px;
     background: var(--glass-bg-dark);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
