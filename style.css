@@ -322,6 +322,8 @@ nav {
     color: var(--text-color-light);
     padding: 1rem;
     text-align: left;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content h1 {
