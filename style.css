@@ -38,7 +38,7 @@ body {
     color: var(--text-color-light);
     overflow-x: hidden;
     position: relative;
-    margin-top: 3rem;
+   
 }
 
 body::before {
@@ -330,6 +330,7 @@ nav {
 .hero-content h1 {
     font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
     line-height: 1.2;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 0 10px var(--primary-neon);
