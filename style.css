@@ -1448,6 +1448,7 @@ section h2 span {
 }
 
 #contact-form input[type="email"],
+#contact-form input[type="text"],
 #contact-form textarea {
     padding: 12px 15px;
     background: rgba(255, 255, 255, 0.08);
