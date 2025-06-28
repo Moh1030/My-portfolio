@@ -104,7 +104,7 @@ nav {
     color: var(--text-color-light);
     font-size: 2.2rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Fira Code' 'Montserrat', sans-serif;
     text-shadow: 0 0 5px var(--primary-neon);
 }
 
