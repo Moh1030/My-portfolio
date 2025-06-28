@@ -38,6 +38,7 @@ body {
     color: var(--text-color-light);
     overflow-x: hidden;
     position: relative;
+    margin-top: 3rem;
 }
 
 body::before {
