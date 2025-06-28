@@ -189,13 +189,19 @@
                 
                 
                 <div class="skill" data-aos="fade-right" data-aos-delay="700">
-                    <h3>MongoDB (Learning)</h3>
+                    <h3>Java(Basic)</h3>
                     <div class="skill-bar">
-                        <div class="skill-level" style="width: 30%" data-aos="skill-bar-animation"></div>
+                        <div class="skill-level" style="width: 70%" data-aos="skill-bar-animation"></div>
                     </div>
                 </div>
                 <div class="skill" data-aos="fade-right" data-aos-delay="800">
-                    <h3>RESTful APIs</h3>
+                    <h3>Python(Basic)</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%" data-aos="skill-bar-animation"></div>
+                    </div>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="800">
+                    <h3>C(Basic)</h3>
                     <div class="skill-bar">
                         <div class="skill-level" style="width: 65%" data-aos="skill-bar-animation"></div>
                     </div>
@@ -262,15 +268,34 @@
         <h2 data-aos="fade-up" data-aos-duration="1000">My <span>Projects</span></h2>
         <div class="projects-grid">
            
-
+             <!-- Project Card 1: GitHub Profile Viewer -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <!-- Optional: Add an img tag here if you have a thumbnail -->
+                <!-- <img src="path/to/github-viewer-thumbnail.jpg" alt="GitHub Viewer Thumbnail"> -->
+                <div class="project-content">
+                    <h3>GitHub Viewer 🔍</h3>
+                    <p>A React app to search and display GitHub profiles with data like name, bio, followers, and
+                        repositories. Supports dark/light mode.</p>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>GitHub API</span>
+                        <span>CSS Modules</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/mohitportfolio/github-profile-viewer" target="_blank"><i
+                                class="fab fa-github"></i> View on GitHub</a>
+                        <!-- If there's a live demo, uncomment this: -->
+                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
+                    </div>
+                </div>
+            </div>
             <!-- Project Card 2: GitaVerse -->
             <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                 <!-- Optional: Add an img tag here if you have a thumbnail -->
                 <!-- <img src="path/to/gitaverse-thumbnail.jpg" alt="GitaVerse Thumbnail"> -->
                 <div class="project-content">
                     <h3>GitaVerse 📖</h3>
-                    <p>A digital platform to explore the Bhagavad Gita verse by verse with Hindi/English/Sanskrit
-                        support, audio playback, search, and daily verses.</p>
+                    <p>An interactive and spiritual web platform displaying chapter-wise Bhagavad Gita verses with Hindi/English translations, audio playback, and dark/light mode support.</p>
                     <div class="project-tech">
                         <span>Html</span>
                         <span>CSS</span>
@@ -286,7 +311,7 @@
 
             
 
-            <!-- Project Card 4: Smart Trash Bin -->
+            <!-- Project Card 3: Smart Trash Bin -->
             <div class="project-card" data-aos="fade-up" data-aos-delay="400">
                 <!-- Optional: Add an img tag here if you have a thumbnail -->
                 <!-- <img src="path/to/smartbin-thumbnail.jpg" alt="SmartBin Thumbnail"> -->
@@ -307,7 +332,7 @@
                 </div>
             </div>
 
-            <!-- Project Card 5: Currency Converter -->
+            <!-- Project Card 4: Currency Converter -->
             <div class="project-card" data-aos="fade-up" data-aos-delay="500">
                 <!-- Optional: Add an img tag here if you have a thumbnail -->
                 <!-- <img src="path/to/currency-converter-thumbnail.jpg" alt="Currency Converter Thumbnail"> -->
@@ -332,29 +357,9 @@
                 </div>
             </div>
 
-            <!-- Project Card 6: GitHub Profile Viewer -->
-            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
-                <!-- Optional: Add an img tag here if you have a thumbnail -->
-                <!-- <img src="path/to/github-viewer-thumbnail.jpg" alt="GitHub Viewer Thumbnail"> -->
-                <div class="project-content">
-                    <h3>GitHub Viewer 🔍</h3>
-                    <p>A React app to search and display GitHub profiles with data like name, bio, followers, and
-                        repositories. Supports dark/light mode.</p>
-                    <div class="project-tech">
-                        <span>React.js</span>
-                        <span>GitHub API</span>
-                        <span>CSS Modules</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/mohitportfolio/github-profile-viewer" target="_blank"><i
-                                class="fab fa-github"></i> View on GitHub</a>
-                        <!-- If there's a live demo, uncomment this: -->
-                        <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a> -->
-                    </div>
-                </div>
-            </div>
+           
 
-            <!-- Project Card 7: This Portfolio -->
+            <!-- Project Card 5: This Portfolio -->
             <div class="project-card" data-aos="fade-up" data-aos-delay="700">
                 <!-- Optional: Add an img tag here if you have a thumbnail -->
                 <!-- <img src="path/to/portfolio-thumbnail.jpg" alt="My Portfolio Thumbnail"> -->
@@ -464,11 +469,15 @@
         <h2 data-aos="fade-up" data-aos-duration="1000">Get in <span>Touch</span></h2>
         <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
             <h3>Send Me a Message!</h3>
-            <p>Whether you have a project in mind, a question, or just want to say hello, feel free to reach out. I'll
+            <p>Whether you have a project in mind, a question, or want to say hello, feel free to reach out. I'll
                 get back to you as soon as possible.</p>
 
             <!-- Formspree.io Integration -->
             <form id="contact-form" action="https://formspree.io/f/mdkzygep" method="POST" data-aos="fade-up">
+                <label>
+                    Your Name:
+                    <input type="text" name="name">
+                </label>
                 <label>
                     Your email:
                     <input type="email" name="email">
